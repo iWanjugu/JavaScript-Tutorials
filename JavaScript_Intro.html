@@ -6,24 +6,21 @@
 
     <body>
         <script type="text/javascript">
-
-        /*Variables (Place holder)
-        1. Syntax: keyword (var) variable_name (x) = whatever you want your variable to be
-        2. variables are case sensitive
-        3. start with and underscore or letter
-        4. other characters need to be letters, underscores and numbers
-        5. CAN'T start with numbers
-        */
-        var tuna = 20.657738 ;
-        //for text - put in quotation marks
-        var tuna2 = " text in here, \"YO!\"";
-            //escape character (\): for quotations within quotations. Plave before (")
-
-        document.write(tuna);
-        document.write(tuna2);
-
+            /*functions
+            Syntax : keyword (function) function_name (funky) Parentesis () {code goes here}
+            */
+            function funky () {
+            //what you want to do
+                //making pop ups
+                alert("OUCH!!!!!");
+            }
+            //to use (call) the function automatically
+            //funky ();
         </script>
 
-
+        <!--to use (call) the function inside a form on a button-->
+        <form>
+        <input type="button" value="touch me!" onclick="funky()">
+        </form>
     </body>
 </html>
