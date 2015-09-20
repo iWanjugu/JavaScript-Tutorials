@@ -7,19 +7,17 @@
     <body>
         <script type="text/javascript">
 
-            // Global and Local Variables
-            // Global - variables created OUTSIDE a function - can be used anywhere...
-            // Local - variables created INSIDE a function - only used within the function it has been declared....
+            // Assignment Opertors
 
-            var girl = " Irene "; //variable declared outside thefunction (GLOBAL)
+            var bucky = 24;
+            bucky += 20; // = 44; adds 20 to 24
+           /* bucky -= 20; // = 4; subtracts 20 from 24
+            bucky *= 20; // = 480; multiplies 24 by 20
+            bucky /= 20; // = 1.2; divides 24 by 20
+            bucky %= 20; // = 4; gives remainder after 24 is divided by 20  */
+            document.write(bucky + "<br />");
 
-            function spit () {
-            var girl = " Irene "  // LOCAL
-            document.write (girl);
-            }
 
-            spit(); //first way to call variable
-            document.write(girl); //second way to call variable: only applicable if variable has been defined outside the function.
         </script>
     </body>
 </html>
