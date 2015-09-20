@@ -7,19 +7,20 @@
     <body>
         <script type="text/javascript">
 
-            // The return Statement
-           function tooeasy() {
-           return "game time" + "<br />";
+            // Calling function from another function
+           function doFirst() {
+               document.write ("I am First!");
            }
-
-            function addNumbers (a,b) {
-            var c = a+b;
-            return c;
+            function doSecond() {
+               document.write (" 2222222! ");
+           }
+            function start() {
+            doFirst ();
+            doSecond ();
             }
-            // addNumbers (3,6) --> cannot call the function like this only. Have to be "printed " on the screen
-            document.write (tooeasy());
-            document.write (addNumbers (3,6));
 
+            start(); //always call functions!!!
+            // calls first function THEN the second function
         </script>
     </body>
 </html>
