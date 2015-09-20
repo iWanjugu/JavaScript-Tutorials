@@ -6,11 +6,19 @@
 
     <body>
         <script type="text/javascript">
-            function apples (one, two) { //write as many variables (parameters) as needed - we'll use two
-            document.write (one + " is better than " + two + "<br />"); //<br /> moves to the next line
-            }
 
-            apples ("Irene", "Sue"); /*"Irene is better than Sue" is printed*/
+            // The return Statement
+           function tooeasy() {
+           return "game time" + "<br />";
+           }
+
+            function addNumbers (a,b) {
+            var c = a+b;
+            return c;
+            }
+            // addNumbers (3,6) --> cannot call the function like this only. Have to be "printed " on the screen
+            document.write (tooeasy());
+            document.write (addNumbers (3,6));
 
         </script>
     </body>
