@@ -7,20 +7,19 @@
     <body>
         <script type="text/javascript">
 
-            // Calling function from another function
-           function doFirst() {
-               document.write ("I am First!");
-           }
-            function doSecond() {
-               document.write (" 2222222! ");
-           }
-            function start() {
-            doFirst ();
-            doSecond ();
+            // Global and Local Variables
+            // Global - variables created OUTSIDE a function - can be used anywhere...
+            // Local - variables created INSIDE a function - only used within the function it has been declared....
+
+            var girl = " Irene "; //variable declared outside thefunction (GLOBAL)
+
+            function spit () {
+            var girl = " Irene "  // LOCAL
+            document.write (girl);
             }
 
-            start(); //always call functions!!!
-            // calls first function THEN the second function
+            spit(); //first way to call variable
+            document.write(girl); //second way to call variable: only applicable if variable has been defined outside the function.
         </script>
     </body>
 </html>
