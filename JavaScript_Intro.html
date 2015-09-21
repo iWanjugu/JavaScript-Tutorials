@@ -6,18 +6,19 @@
 
     <body>
         <script type="text/javascript">
+            // switch statement
 
-            // If Statements
-            var apples = 53;
-            var hotdogs = 50;
+            var girl = "natalie";
+            switch(girl) { //use instead of an if statement with many conditions
+                case "natalie": //this is the case scenario for the condition girl - "natalie"
+                    document.write ("you must xxxx");
+                    break; //when you find what you're looking for just break till the end
+                case "ashley":
+                    document.write ("Ooooohhhh...");
+                    break;
 
-            /*syntx
-            if (comparison) {
-            if true - compute code within curly brackets} */
-
-            if (apples == hotdogs) { //can use <, >,  >=, <=
-            document.write ("YaY!");
-            } //nothing happens if it's false
+                default: //if all your cases don't match
+            }       document.write ("This is the default"); //no break
 
         </script>
     </body>
